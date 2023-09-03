@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=DM+Serif+Display:ital@1&family=Lobster&family=Pacifico&family=Prompt:wght@300&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+:root{
+    font-family: 'DM Serif Display', serif;
+    scroll-behavior: smooth;
+}
+   
+.container{
+    width: 100vw;
+    background-color: #130f40;
+    background-image: linear-gradient(315deg, #130f40 0%, #000000 74%);
+}
+.nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(30, 30, 30);
+    height: 40px;
+    position: sticky;
+}
+ .nav h2{
+    color: beige;
+ }
+.nav ul{
+    width: 60%;
+    height: 40px;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center; 
+}
+    
+.nav a{  height: 100%;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+.nav li{
+    
+    list-style: none;
+    transition-property: all;
+    height: 100%;
+    position: relative;
+    
+  
+}
+.nav li :hover{
+  
+    font-size: 20px;
+    transition-duration: 0.5s;
+}
+.hero{
+    height: 100vh;
+    width: 100vw;
+    color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero span{
+    color: dodgerblue;
+}
+.hero p {
+    font-size: xx-large;
+    font-weight: 1000;
+    margin-right: 100px;
+}
+.hero img{
+    height:450px;
+    width:350px;
+    
+}
+
+.details{
+    height: 100vh;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+.details p {
+    color:bisque
+}
+.details .description {
+    height: auto;
+    width: 500px;
+    margin-top: 20px;
+}
+.hero .social{
+    width: 200px;
+    display: flex;
+    justify-content: space-around;
+}
+.social {
+    margin-top: 20px;
+}
+.hero .social a{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.skills{
+    height: 100vh;
+    width: 100%;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.cont {
+    width: 100%; /* Full width */
+    background-color: #170202; /* Grey background */
+  }
+  
+  .skill {
+    text-align: right; /* Right-align text */
+   
+    color: rgb(0, 0, 0); /* White text color */
+   
+  }
+  
+  .html { height: 1px;width: 90%; background-color: #ffffff;color: #ffffff;} /* Green */
+  .css { height: 1px; width: 80%; background-color: #ffffff;color: #ffffff;} /* Blue */
+  .js {height: 1px; width: 65%; background-color: #ffffff;color: #ffffff;}
+  .C{ height: 1px; width: 95%; background-color: #ffffff;color: #ffffff;}
+  .Data{ height: 1px; width: 80%; background-color: #ffffff;color: #ffffff;} /* Red */
+
+
+  .skills p{
+    color:white;
+  }
+
+  .projects{
+    padding-top: 20px;
+    height: 100vh;
+    width: 100%;
+    overflow-y: scroll;
+  }
+  .projects h1 {
+    text-align: center;
+    font-size: xx-large;
+    color: rgb(255, 255, 255);
+  }
+  .projects h2 , p {
+    color: white
+  }
+  .basket{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 50px;
+  }
+  .projects .section img{
+    transition: transform 1s;
+  }
+  .section img:hover{
+    transform:scale(1.2 , 1.2);
+  }
+
+  .projects .section h2 {
+    width: 225px;
+  }
+  .projects .section p {
+    width: 225px;
+  }
+  .projects .section h2{
+    margin-bottom: 10px;
+  }
+
+  .contact{
+   height: 100vh;
+   width: 100vw;
+
+
+  }
+  .contact h2{
+    text-align: center;
+    padding-top: 50px;
+    color:white;
+  }
+  input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    background-color: rgb(26, 61, 79);
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  input[type=submit] {
+    width: 100%;
+    background-color: #060650;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: #070149;
+  }
+  #Message{
+    height: 200px;
+  }
+  form{
+    width: 60%;
+    padding: 50px;
+    margin-left: 20%;
+    color: #ffffff;
+  }
+  ::placeholder{
+    color:#ffffff
+  }
+  input, select, textarea{
+    color: #ffffff;
+}
+.footer{
+    text-align: center;
+    background-color: #00031c;
+}
+@media only screen and (max-width: 480px){
+    .nav{
+        flex-direction: column;
+        height: 70px;
+    }
+    .nav ul{
+        width: 100%;
+    }
+    .hero{
+        flex-direction:  column-reverse
+    }
+    .hero img{
+        height: 300px;
+        width: 225px;
+    }
+    .hero p {
+       
+        margin-right: 0px;
+        font-size: x-large;
+        font-weight: 400;
+    }
+    #abt{
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 600px){
+    .hero img{
+      height: 350px;
+      width: 250px;
+      margin-right: 50px;
+    }
+    .hero p{
+       margin-right: 10px;
+    }
+}
+@media only screen and (min-width: 315px) and (max-width: 530px){
+    .details img {
+      width: 300px;
+    }
+    .details .description{
+        width:300px;
+    }
+}
+@media only screen and (max-width: 314px){
+.details img {
+    width : 200px;
+}
+.details .description{
+    width: 200px;
+    overflow-y:scroll;
+}
+}
+@media only screen and (max-width: 450px){
+   .projects .basket .section img{
+    width: 180px;
+    height: 180px;
+   }
+   .projects .basket .section h2 ,  .projects .basket .section p {
+    width: 180px;
+    font-size: small;
+   }
+}
